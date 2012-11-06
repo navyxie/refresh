@@ -9,7 +9,7 @@
 
   <name>Quick Refresh</name>
 
-  <asset src="www/refresh.js" "refresh.js" />
+  <asset src="www/refresh.js" target="js/refresh.js" />
 
   <!-- Yes, empty platforms. This is a JS-only plugin. -->
   <platform name="android">
