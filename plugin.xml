@@ -2,19 +2,19 @@
 <plugin xmlns="http://phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="org.apache.cordova.refresh"
-    version="1.0.0">
+    version="1.0.1">
   <engines>
-    <engine name="cordova" version=">=2.2.0" />
+    <engine name="cordova" version=">=2.4.0" />
   </engines>
 
   <name>Quick Refresh</name>
 
-  <asset src="www/refresh.js" target="js/refresh.js" />
+  <js-module src="www/refresh.js" name="Refresh">
+    <runs target="init" />
+  </js-module>
 
   <!-- Yes, empty platforms. This is a JS-only plugin. -->
-  <platform name="android">
-  </platform>
-
-  <platform name="ios">
-  </platform>
+  <platform name="android"></platform>
+  <platform name="ios"></platform>
+  <platform name="bb"></platform>
 </plugin>
